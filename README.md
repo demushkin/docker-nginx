@@ -2,9 +2,9 @@
 Nginx Dockerfile with full config
 docker-compose.yml example:
 
+```
 version: "3"
 services:
-
     nginx:
         image: demushkin/nginx:latest
         restart: always
@@ -15,5 +15,6 @@ services:
         ports:
             - "80:80"
         tty: true
-
+}}
+```
 sites-enabled - directory with you virtual hosts configs
